@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SqueekToken",
+    "name": "squeek",
+    "symbol": "SQUEEK",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "800000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "squeek (SQUEEK) is a plain fixed-supply ERC-20 (src/SqueekToken.sol, contract SqueekToken). X: @squeekchain, website: squeekchain.com. The constructor takes no arguments and mints the whole supply of 1,000,000,000 SQUEEK (1000000000000000000000000000 minor units, 18 decimals) once to msg.sender, the launch factory. There is no owner, no mint, no burn, no pause, no blacklist and no transfer fee: transfers move exactly the amount requested, so the factory-to-distributor transfer, the pool seed and swaps arrive whole, and nothing can grow the supply or move or freeze a holder's balance after launch. No application contracts are deployed with the token. The pool pairs with IMD on Ethereum at the launch policy's 1.25% fee; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply, and pool.initialPrice is provenance only."
+}
